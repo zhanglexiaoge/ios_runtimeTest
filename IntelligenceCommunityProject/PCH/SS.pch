@@ -1,0 +1,264 @@
+//
+//  SS.pch
+//  Sanbox-SSZJ
+//
+
+//#define baseUrl @"http://192.168.1.52/sanbox/rest/ws/req/"           //本地
+//#define baseUrl @"http://115.29.246.215/sanbox/rest/ws/req/"         //内测
+//#define baseUrl  @"http://www.3box.cc/sanbox/rest/ws/req/"           //发布到APPStore
+//#define baseUrl @"http://101.71.240.90:7089/sanbox/rest/ws/req/"     //外网本地
+
+//#define baseUrl  @"http://192.168.99.147:5555/ws"
+//#define baseUrl  @"http://192.168.99.159:5555/ws"
+//#define baseUrl  @"http://192.168.1.250:5555/ws"
+
+
+
+//邀请链接
+//1.线上
+#define invitationLink  @"http://www.ishanshan.com/sanboxbbs/h5/bbsshare/toinvite/"
+#define MaaLink0ffline  @"http://saas.3box.cc/omp-org/organ/appointmentPage"
+#define baseUrl         @"http://www.ishanshan.com/ws"  //发布到APPStore环境
+                   //112.124.112.87
+
+
+//2.线下
+//#define baseUrl  @"http://192.168.1.69:5555/ws"                                    //本地测试环境
+
+//#define baseUrl @"http://120.26.164.201:5555/ws"
+//#define invitationLink @"http://192.168.1.60/"
+//#define MaaLink0ffline @"http://192.168.1.60/omp-org/organ/appointmentPage"
+
+
+#define SCALE_X SCREENWIDTH / 320
+#define SCALE_Y SCREENWIDTH / 568
+
+
+#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//图片圆角
+/**
+ *  屏宽
+ */
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+
+/**
+ *  屏高
+ */
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+/**
+ * 实际高度
+ */
+#define NETSCREENHEIGHT (SCREENHEIGHT-64-49)
+
+/**
+ * 日志输出
+ */
+#ifdef DEBUG
+#define SSLog(fmt, ...) NSLog((@"<%s : %d> %s  " fmt), [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, ##__VA_ARGS__);
+#else
+#define SSLog(...)
+#endif
+
+/**
+ * 返回
+ */
+#define BACK                                                                                                        \
+if (self.navigationController) {                                                                                        \
+    [self.navigationController popViewControllerAnimated:YES];                                                              \
+} else {                                                                                                                \
+    [self dismissViewControllerAnimated:YES completion:nil];                                                         \
+}                                                                                                                           \
+
+/**
+ * 跳转
+ */
+#define PUSH(A)                                                                                                      \
+if (self.navigationController) {                                                                                         \
+    [self.navigationController pushViewController:A animated:YES];                                                           \
+} else {                                                                                                                 \
+    [self presentViewController:A animated:YES completion:nil];                                                      \
+}                                                                                                                           \
+
+/**
+ * 登录
+ */
+#define LOGIN                                                                                                       \
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{             \
+    SSLoginViewController *login = [[SSLoginViewController alloc] init];                                                    \
+    PUSH(login)                                                                                                         \
+});                                                                                                                 \
+
+/**
+ *
+ */
+#define TOKEN [SSTool getLocationData:@"token"];
+
+/**
+ *  解决循环引用
+ */
+#define weak_self(va)   __weak __typeof__(va) metamacro_concat(va, _weak_) = (va);
+
+#define strong_self(va) __strong __typeof__(va) va = metamacro_concat(va, _weak_);
+
+#define metamacro_concat(A, B) A ## B
+
+/**
+ * TextField的输入个数
+ */
+#define stringLength textField.text.length - range.length + string.length
+
+/**
+ * Frame大小
+ */
+#define Frame CGRectMake(0, 64, SCREENWIDTH, SCREENHEIGHT - 64)
+
+/**
+ * 创建基类
+ */
+#define BASETABLE [[SSBaseTableViewController alloc] init]
+
+/**
+ * 当前window
+ */
+#define WINDOW [[UIApplication sharedApplication].delegate window]
+
+/**
+ * 占位图
+ */
+#define ZWT @"demo-1024px"
+
+/**
+ * 占位图头像
+ */
+#define ZWTX @"demo"
+
+/**
+ * 设置cell点击无动画
+ */
+#define STYLENONE self.selectionStyle = UITableViewCellSelectionStyleNone
+
+/**
+ * 隐藏tabbar
+ */
+#define HIDDENTABBAR [[NSNotificationCenter defaultCenter] postNotificationName:@"hiddenTabbar" object:nil];
+
+/**
+ * 显示tabbar
+ */
+#define SHOWTABBAR [[NSNotificationCenter defaultCenter] postNotificationName:@"showTabbar" object:nil];
+
+
+#define POPHOMEPAGE [[NSNotificationCenter defaultCenter] postNotificationName:@"LoginState" object:self userInfo:nil];
+
+#define DESTRUCTIONPOPHOMEPAGE [[NSNotificationCenter defaultCenter] removeObserver:self name:@"LoginState" object:nil];
+/**
+ * 颜色
+ */
+
+#define AppColor    [UIColor hexStringToColor:@"#88c70a"]
+#define Color72cba4 [UIColor hexStringToColor:@"#72cba4"]
+#define Colorffffff [UIColor hexStringToColor:@"#ffffff"]
+#define Colora4d322 [UIColor hexStringToColor:@"#a4d322"]
+#define Color3d4245 [UIColor hexStringToColor:@"#3d4245"]
+#define Color8e8e8e [UIColor hexStringToColor:@"#8e8e8e"]
+#define Colorcccccc [UIColor hexStringToColor:@"#cccccc"]
+#define Colorf1f1f1 [UIColor hexStringToColor:@"#f1f1f1"]
+#define Colorededed [UIColor hexStringToColor:@"#ededed"]
+#define Color666666 [UIColor hexStringToColor:@"#666666"]
+/*
+ *评论相关
+ */
+#ifdef DEBUG
+#define ZFLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZFLog(...)
+#endif
+
+
+#define ZFNotCenter [NSNotificationCenter defaultCenter]
+
+
+
+
+/**
+ *  字体适配
+ */
+#define FONT_SIZE(size) (SCREENWIDTH==320 ? size- 2 : SCREENWIDTH==375 ? size :  size +2)
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "NetworkRequest.h"
+#import "Masonry.h"
+#import "SDCycleScrollView.h"
+
+//#import "SSDateRequest.h"               //数据请求
+//#import "SSBaseResp.h"                  //错误码
+//#import "SSCommonResp.h"                //错误解析
+//#import "SSPagingResp.h"                //数据分页
+#import "UIColor+SSColorCoversion.h"    //颜色转换
+//#import "UIView+SSLineView.h"           //通用线条
+//#import "UIView+SSAnimation.h"          //动画类
+#import "AFNetworking.h"                //网络框架
+#import "MJRefresh.h"                   //刷新框架
+//#import "MJDIYHeader.h"                 //刷新动画
+//#import "MJDIYBackFooter.h"             //刷新动画
+//#import "MJExtension.h"                 //json转字典
+//#import "MBProgressHUD.h"               //提示框
+#import "UIImageView+WebCache.h"        //图片转换
+//#import "UIButton+WebCache.h"           //按钮图片转换
+//#import "YTKKeyValueStore.h"            //数据存储
+//#import "Reachability.h"                //网络判断
+//#import "NSDate+SSDate.h"               //时间分类
+//#import "UIImage+ImageEffects.h"        //图片模糊梳理
+//#import "UIImage+ImageEffectsTwo.h"     //图片模糊梳理
+//
+//#import "NSString+Emoji.h"              //二进制数据转化为表情
+//
+//#import "UIImage+SSScreenshots.h"       //屏幕截取
+//#import "SSShareView.h"                 //分享封装
+//#import "UIView+SSBackgroundMask.h"     //背景遮罩
+//#import "UIView+SSEmptyDataPageView.h"  //空数据页面
+//#import "SSLoginViewController.h"       //登录界面
+//#import "SSMainOneController.h"         //界面首页
+//#import "SSOthersPersonalCenter.h"      //他人主页
+//#import "SSWebViewController.h"         //网页界面
+//#import "SSShareViewMediation.h"        //分享中介
+//#import "VIPhotoView.h"                 //图片拉捏缩放
+//#import <ActionSheetCustomPicker.h>     //地址选择器
+//#import "ZLPhotoActionSheet.h"          //相册选择
+//#import "SSVipViewController.h"         //Vip机构
+//#import "SSNoVipInstitusionsController.h" //非Vip机构
+//#import "HBRSAHandler.h"                //加密文件
+//#import "SSEmptyDataInterface.h"        //空数据页面
+//#import "UIView+ZF.h"
+//#import "ZFEmoConst.h"
+//#import "ZFEmotion.h"           //评论相关
+///*分享**/
+//#import <ShareSDK/ShareSDK.h>
+//#import <ShareSDKConnector/ShareSDKConnector.h>
+//#import <TencentOpenAPI/QQApiInterface.h>
+//#import <TencentOpenAPI/TencentOAuth.h>
+//#import "WXApi.h"
+//#import "WeiboSDK.h"
+//#import <ShareSDKUI/ShareSDK+SSUI.h>
+//#import <ShareSDKUI/SSUIShareActionSheetStyle.h>
+//#import <ShareSDKUI/SSUIEditorViewStyle.h>
+//#import <ShareSDKExtension/SSEThirdPartyLoginHelper.h>
+//
+//#import <BaiduMapAPI_Base/BMKBaseComponent.h>           //引入base相关所有的头文件
+//#import <BaiduMapAPI_Map/BMKMapComponent.h>             //引入地图功能所有的头文件
+//#import <BaiduMapAPI_Search/BMKSearchComponent.h>       //引入检索功能所有的头文件
+//#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>   //引入云检索功能所有的头文件
+//#import <BaiduMapAPI_Location/BMKLocationComponent.h>   //引入定位功能所有的头文件
+//#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>         //引入计算工具所有的头文件
+//#import <BaiduMapAPI_Radar/BMKRadarComponent.h>         //引入周边雷达功能所有的头文件
+//#import <BaiduMapAPI_Map/BMKMapView.h>                  //只引入所需的单个头文件
+//
+//#import "EMSDK.h"                                       //环信
+//#import "EaseUI.h"
+//#import "UMMobClick/MobClick.h"                        //友盟
+
+#endif
+
