@@ -9,6 +9,24 @@
 /* Begin PBXBuildFile section */
 		6504EBE62057B09600D05676 /* NSObject+NSObject_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6504EBE52057B09600D05676 /* NSObject+NSObject_Model.m */; };
 		6504EBEA2057B13D00D05676 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6504EBE92057B13D00D05676 /* TestModel.m */; };
+		65734454205BC1990055E92E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734453205BC1990055E92E /* CoreGraphics.framework */; };
+		65734456205BC1B10055E92E /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734455205BC1B10055E92E /* libiconv.2.tbd */; };
+		65734458205BC1BE0055E92E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734457205BC1BD0055E92E /* UIKit.framework */; };
+		6573445A205BC1CA0055E92E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734459205BC1CA0055E92E /* SystemConfiguration.framework */; };
+		6573445C205BC1D50055E92E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573445B205BC1D50055E92E /* QuartzCore.framework */; };
+		6573445E205BC1DF0055E92E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573445D205BC1DF0055E92E /* OpenGLES.framework */; };
+		65734460205BC1E90055E92E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573445F205BC1E90055E92E /* OpenAL.framework */; };
+		65734462205BC1FB0055E92E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734461205BC1FB0055E92E /* MediaPlayer.framework */; };
+		65734464205BC2050055E92E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734463205BC2050055E92E /* iAd.framework */; };
+		65734466205BC2110055E92E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734465205BC2110055E92E /* Foundation.framework */; };
+		65734468205BC2260055E92E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734467205BC2260055E92E /* CoreVideo.framework */; };
+		6573446A205BC2330055E92E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734469205BC2330055E92E /* CoreMotion.framework */; };
+		6573446C205BC24A0055E92E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573446B205BC24A0055E92E /* CoreMedia.framework */; };
+		6573446E205BC2550055E92E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573446D205BC2550055E92E /* CoreLocation.framework */; };
+		65734470205BC2610055E92E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573446F205BC2600055E92E /* CFNetwork.framework */; };
+		65734472205BC26B0055E92E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734471205BC26A0055E92E /* AVFoundation.framework */; };
+		65734474205BC2860055E92E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734473205BC2850055E92E /* AudioToolbox.framework */; };
+		65734476205BC2930055E92E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65734475205BC2920055E92E /* CoreText.framework */; };
 		65999A7B202AC78C00FC126C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65999A7A202AC78C00FC126C /* AppDelegate.m */; };
 		65999A7E202AC78C00FC126C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65999A7D202AC78C00FC126C /* ViewController.m */; };
 		65999A81202AC78C00FC126C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65999A7F202AC78C00FC126C /* Main.storyboard */; };
@@ -59,6 +77,24 @@
 		6504EBE52057B09600D05676 /* NSObject+NSObject_Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSObject_Model.m"; sourceTree = "<group>"; };
 		6504EBE82057B13D00D05676 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		6504EBE92057B13D00D05676 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		65734453205BC1990055E92E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65734455205BC1B10055E92E /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		65734457205BC1BD0055E92E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65734459205BC1CA0055E92E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6573445B205BC1D50055E92E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6573445D205BC1DF0055E92E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6573445F205BC1E90055E92E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		65734461205BC1FB0055E92E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		65734463205BC2050055E92E /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		65734465205BC2110055E92E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65734467205BC2260055E92E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		65734469205BC2330055E92E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6573446B205BC24A0055E92E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6573446D205BC2550055E92E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6573446F205BC2600055E92E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		65734471205BC26A0055E92E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		65734473205BC2850055E92E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		65734475205BC2920055E92E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		65999A76202AC78C00FC126C /* IntelligenceCommunityProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelligenceCommunityProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65999A79202AC78C00FC126C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65999A7A202AC78C00FC126C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +150,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65734476205BC2930055E92E /* CoreText.framework in Frameworks */,
+				65734474205BC2860055E92E /* AudioToolbox.framework in Frameworks */,
+				65734472205BC26B0055E92E /* AVFoundation.framework in Frameworks */,
+				65734470205BC2610055E92E /* CFNetwork.framework in Frameworks */,
+				6573446E205BC2550055E92E /* CoreLocation.framework in Frameworks */,
+				6573446C205BC24A0055E92E /* CoreMedia.framework in Frameworks */,
+				6573446A205BC2330055E92E /* CoreMotion.framework in Frameworks */,
+				65734468205BC2260055E92E /* CoreVideo.framework in Frameworks */,
+				65734466205BC2110055E92E /* Foundation.framework in Frameworks */,
+				65734464205BC2050055E92E /* iAd.framework in Frameworks */,
+				65734462205BC1FB0055E92E /* MediaPlayer.framework in Frameworks */,
+				65734460205BC1E90055E92E /* OpenAL.framework in Frameworks */,
+				6573445E205BC1DF0055E92E /* OpenGLES.framework in Frameworks */,
+				6573445C205BC1D50055E92E /* QuartzCore.framework in Frameworks */,
+				6573445A205BC1CA0055E92E /* SystemConfiguration.framework in Frameworks */,
+				65734458205BC1BE0055E92E /* UIKit.framework in Frameworks */,
+				65734456205BC1B10055E92E /* libiconv.2.tbd in Frameworks */,
+				65734454205BC1990055E92E /* CoreGraphics.framework in Frameworks */,
 				D4F9321233A0DBA6B7DA8261 /* libPods-IntelligenceCommunityProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +459,24 @@
 		D7A9780EBAEE2AFBBDAAD4F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65734475205BC2920055E92E /* CoreText.framework */,
+				65734473205BC2850055E92E /* AudioToolbox.framework */,
+				65734471205BC26A0055E92E /* AVFoundation.framework */,
+				6573446F205BC2600055E92E /* CFNetwork.framework */,
+				6573446D205BC2550055E92E /* CoreLocation.framework */,
+				6573446B205BC24A0055E92E /* CoreMedia.framework */,
+				65734469205BC2330055E92E /* CoreMotion.framework */,
+				65734467205BC2260055E92E /* CoreVideo.framework */,
+				65734465205BC2110055E92E /* Foundation.framework */,
+				65734463205BC2050055E92E /* iAd.framework */,
+				65734461205BC1FB0055E92E /* MediaPlayer.framework */,
+				6573445F205BC1E90055E92E /* OpenAL.framework */,
+				6573445D205BC1DF0055E92E /* OpenGLES.framework */,
+				6573445B205BC1D50055E92E /* QuartzCore.framework */,
+				65734459205BC1CA0055E92E /* SystemConfiguration.framework */,
+				65734457205BC1BD0055E92E /* UIKit.framework */,
+				65734455205BC1B10055E92E /* libiconv.2.tbd */,
+				65734453205BC1990055E92E /* CoreGraphics.framework */,
 				0A2E95B491E9F861FC26DDA2 /* libPods-IntelligenceCommunityProject.a */,
 			);
 			name = Frameworks;
@@ -794,8 +866,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26QGR75XUB;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IntelligenceCommunityProject/PCH/SS.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDCycleScrollView\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"$(SRCROOT)/Libraries\"",
+					"\"$(SRCROOT)/Libraries/libil2cpp/include\"",
+					"\"$(SRCROOT)/Classes\"",
+					"\"$(SRCROOT)/Classes/Native\"",
+				);
 				INFOPLIST_FILE = IntelligenceCommunityProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -804,10 +890,28 @@
 					"\"$(PROJECT_DIR)/AFNetworking\"",
 					"\"$(PROJECT_DIR)/MJRefresh\"",
 					"\"$(PROJECT_DIR)/SDWebImage\"",
+					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDCycleScrollView\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"-DINIT_SCRIPTING_BACKEND=1",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.IntelligenceCommunity.IntelligenceCommunityProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				UNITY_RUNTIME_VERSION = 1.0;
 			};
 			name = Debug;
 		};
@@ -818,8 +922,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26QGR75XUB;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IntelligenceCommunityProject/PCH/SS.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/SDCycleScrollView\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"$(SRCROOT)/Libraries\"",
+					"\"$(SRCROOT)/Libraries/libil2cpp/include\"",
+					"\"$(SRCROOT)/Classes\"",
+					"\"$(SRCROOT)/Classes/Native\"",
+				);
 				INFOPLIST_FILE = IntelligenceCommunityProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -828,10 +946,28 @@
 					"\"$(PROJECT_DIR)/AFNetworking\"",
 					"\"$(PROJECT_DIR)/MJRefresh\"",
 					"\"$(PROJECT_DIR)/SDWebImage\"",
+					"$(PROJECT_DIR)/Libraries",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDCycleScrollView\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"-DINIT_SCRIPTING_BACKEND=1",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.IntelligenceCommunity.IntelligenceCommunityProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				UNITY_RUNTIME_VERSION = 1.0;
 			};
 			name = Release;
 		};
